@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Slab:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto Slab', sans-serif;
+  line-height: 1.5;
+
+  color: #ebe7ef;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: radial-gradient(
+      circle at top,
+      rgba(241, 210, 70, 0.98),
+      rgba(250, 176, 103, 0.87)
+    ),
+    url('bg-pattern-dark.png');
+  background-repeat: repeat;
+  background-size: 100% 100%, 30% 30%, 100% 100%;
+  min-height: 110rem;
+}
+
+.hide{
+  display: none;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 8rem;
+  object-fit: contain;
+  margin: 3rem auto 1rem auto;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.4));
+}
+
+h1 {
+  font-family: 'Caprasimo', cursive;
+  font-size: 3rem;
+  margin: 0 auto 3rem auto;
+  color: #3f3b00;
+}
+
+#game-container {
+  max-width: 45rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 6px;
+  background: linear-gradient(#383624, #282617);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+#players{
+  margin-left:3%;
+  display:flex;
+  gap:8%;
+  max-width:75%
+}
+
+.player{
+  margin: auto;
+  border:1.5px solid white;
+  display: flex;
+}
+
+.highlight{
+  border: 1.5px solid yellow;
+  padding: 10px;
+}
+
+.Edit{
+  background-color: rgba(224, 159, 67, 0.953);
+  color: white;
+  font-weight: bold;
+}
+.Edit:hover{
+  background-color: black;
+}
+
+.Submit{
+  background-color: rgb(61, 215, 53);
+  font-weight: bold;
+}
+.Submit:hover{
+  background-color: aqua;
+}
+
+.player_name{
+  background-color: white;
+  color:black;
+  width:150px;
+}
+#maingame{
+  margin-top: 20PX;
+  display:grid;
+  width:100%;
+  justify-content: center;
+  height:350px;
+  gap:20px;
+  grid-template-columns: 0.2fr 0.2fr 0.2fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.box{
+  background-color: rgb(233, 159, 11);
+  text-align: center;
+  font-size: 70px;
+  justify-content: center;
+  vertical-align: middle;  
+}
+#WinLoss{
+  margin-top: 15px;
+  height: 40px;
+  width:30%;
+  background-color: #ebe7ef;
+  color:black
+}
