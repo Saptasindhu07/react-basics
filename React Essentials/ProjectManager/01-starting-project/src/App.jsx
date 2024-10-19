@@ -88,7 +88,7 @@ function App() {
   }
   return (
     <>
-      <main className=" my-8 h-screen text-stone-50 rounded-r-xl flex">
+      <main className="h-screen text-stone-50 rounded-r-xl flex">
         <ProjectsSidebar projectClicked={projectClicked} onAddProjectClick={()=>{AddProjectSelected()}} projects={projectState.ProjectList} />
         {decideOutputMainPanel()}
       </main>

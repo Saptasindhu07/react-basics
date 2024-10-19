@@ -1,6 +1,6 @@
 export default function ProjectsSidebar({onAddProjectClick,projects,projectClicked}){
     return(
-        <aside className="px-8 py-16 bg-slate-950">
+        <aside className="px-8 py-16 bg-slate-950 h-screen">
             <h2 className="mb-8 ml-3 font-bold uppercase">YOUR PROJECTS</h2>
             <div>
                 <button className="text-center px-1 py-1 text-stone-200 font-bold ml-3 bg-stone-700 hover:bg-stone-300 hover:text-stone-100 w-36" onClick={onAddProjectClick}>+Add Project</button>
